@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nPrésentation TAG Heuer - Transformation Digitale IA\n\nPrésentation HTML interactive complète (14 slides) sur la stratégie de transformation digitale et IA pour TAG Heuer.\n\nFeatures:\n- 14 slides professionnelles avec contenu détaillé MBA niveau 2\n- Quick Wins immédiats : 3 pistes IA (ROI 29x, 850K/mois)\n- Portefeuille complet : 6 pistes IA avec tableau comparatif et matrice stratégique\n- Navigation clavier/souris/tactile\n- Design responsive TAG Heuer (vert #008150, rouge #E3001D)\n- Animations et transitions fluides\n\nTech: HTML5, CSS3, JavaScript vanilla (sans dépendances)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(gh auth status:*)",
+      "Bash(git config:*)",
+      "Bash(where gh:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(start \"C:\\Users\\alexa\\OneDrive\\Bureau\\Projet pour Claude Code\\03) Présentation Tag\\04) Présentation HTML\\index.html\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

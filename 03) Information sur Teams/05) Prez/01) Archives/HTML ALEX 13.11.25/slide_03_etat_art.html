@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title">État de l'Art - L'IA dans le Luxe</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .introduction {
+            font-size: 19px;
+            color: #333333;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #F8F9FA;
+            border-left: 6px solid var(--secondary);
+            line-height: 1.7;
+        }
+        
+        .competitor-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .competitor-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            align-items: start;
+        }
+        
+        .competitor-name {
+            font-size: 22px;
+            color: var(--accent);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .competitor-status {
+            font-size: 14px;
+            color: #666;
+            font-weight: normal;
+        }
+        
+        .competitor-details {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .check {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .cross {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .gap-box {
+            background: var(--secondary);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .gap-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .gap-text {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        
+        .opportunity-box {
+            background: var(--primary);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            font-size: 19px;
+            font-weight: bold;
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .source {
+            font-size: 14px;
+            color: #666666;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #E0E0E0;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Benchmark Concurrentiel</div>
+            <h1>État de l'Art : L'IA dans le Luxe</h1>
+        </div>
+        
+        <div class="introduction">
+            Où en sont les concurrents ? L'analyse du marché révèle des niveaux de maturité IA très variables dans l'horlogerie de luxe, avec un gap stratégique majeur que TAG Heuer peut exploiter.
+        </div>
+        
+        <div class="competitor-grid">
+            <div class="competitor-row">
+                <div class="competitor-name">
+                    Cartier<br>
+                    <span class="competitor-status">(Leader IA)</span>
+                </div>
+                <div class="competitor-details">
+                    <span class="check">✅</span> Moteur recommandation (+35% engagement online)<br>
+                    <span class="check">✅</span> Détection fraude sophistiquée + Essayage virtuel AR<br>
+                    <span class="cross">❌</span> Pas de personnalisation culturelle
+                </div>
+            </div>
+            
+            <div class="competitor-row">
+                <div class="competitor-name">
+                    Omega<br>
+                    <span class="competitor-status">(Innovant)</span>
+                </div>
+                <div class="competitor-details">
+                    <span class="check">✅</span> Virtual Try-On (AR) opérationnel<br>
+                    <span class="cross">❌</span> Personnalisation limitée
+                </div>
+            </div>
+            
+            <div class="competitor-row">
+                <div class="competitor-name">
+                    Rolex<br>
+                    <span class="competitor-status">(Discret)</span>
+                </div>
+                <div class="competitor-details">
+                    <span class="check">✅</span> IA interne (contrôle qualité, anti-contrefaçon)<br>
+                    <span class="cross">❌</span> Aucune initiative client-facing visible
+                </div>
+            </div>
+            
+            <div class="competitor-row">
+                <div class="competitor-name">
+                    LVMH<br>
+                    <span class="competitor-status">(Écosystème)</span>
+                </div>
+                <div class="competitor-details">
+                    <span class="check">✅</span> Philosophie "Quiet Tech" (IA invisible)<br>
+                    <span class="check">✅</span> Plateforme data mutualisée (GCP + Dataiku)<br>
+                    <span class="check">✅</span> Agent IA interne "MaIA" (40,000 employés)
+                </div>
+            </div>
+        </div>
+        
+        <div class="gap-box">
+            <div class="gap-title">Gap à Combler</div>
+            <div class="gap-text">
+                Aucun acteur luxe n'a implémenté d'intelligence culturelle à grande échelle pour personnaliser l'expérience selon les codes régionaux tout en préservant l'authenticité de la marque.
+            </div>
+        </div>
+        
+        <div class="opportunity-box">
+            🚀 Opportunité TAG Heuer : Devenir pionnier de l'intelligence culturelle dans l'horlogerie de luxe
+        </div>
+        
+        <div class="source">
+            Sources : Rapport IA Luxe (benchmark pages 45-52), analyse Cartier/Omega/Rolex, documentation LVMH "Quiet Tech" 2024
+        </div>
+    </div>
+</body>
+</html>

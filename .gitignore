@@ -1,0 +1,12 @@
+# Fichiers vidéo (trop volumineux pour GitHub)
+*.mp4
+*.avi
+*.mov
+
+# Fichiers temporaires
+~$*
+*.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db

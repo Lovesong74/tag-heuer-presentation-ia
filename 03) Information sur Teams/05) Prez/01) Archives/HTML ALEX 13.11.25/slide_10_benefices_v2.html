@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bénéfices Attendus</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .benefit-card {
+            background: #f8f9fa;
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+        }
+        
+        .benefit-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .benefit-icon {
+            font-size: 36px;
+        }
+        
+        .benefit-title {
+            font-size: 22px;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .benefit-list li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .benefit-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .metric-highlight {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .differentiation-section {
+            background: var(--primary);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .diff-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .diff-content {
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .alignment-section {
+            background: #fff3cd;
+            border: 3px solid #ffc107;
+            padding: 20px 25px;
+            border-radius: 8px;
+        }
+        
+        .alignment-title {
+            font-size: 20px;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .alignment-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .alignment-item {
+            font-size: 15px;
+            color: #333;
+            padding: 8px;
+            background: white;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .alignment-item::before {
+            content: "✓ ";
+            color: var(--primary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Impact Business & Expérience Client</div>
+            <h1>Bénéfices Attendus</h1>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-header">
+                    <div class="benefit-icon">🌐</div>
+                    <div class="benefit-title">Site Web<br>Personnalisé</div>
+                </div>
+                <ul class="benefit-list">
+                    <li>Conversion online : <span class="metric-highlight">2-3% → 4-6%</span> (+100%)</li>
+                    <li>Drive-to-store : <span class="metric-highlight">+40%</span></li>
+                    <li>Temps découverte : <span class="metric-highlight">-50%</span></li>
+                    <li>Abandon panier : <span class="metric-highlight">-35%</span></li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-header">
+                    <div class="benefit-icon">👔</div>
+                    <div class="benefit-title">Formation<br>Vendeurs</div>
+                </div>
+                <ul class="benefit-list">
+                    <li>Conversion vendeurs formés : <span class="metric-highlight">+15%</span></li>
+                    <li>Temps onboarding : <span class="metric-highlight">-30%</span></li>
+                    <li>NPS clients internationaux : <span class="metric-highlight">+15 pts</span></li>
+                    <li>Turnover vendeurs : <span class="metric-highlight">-20%</span></li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-header">
+                    <div class="benefit-icon">💰</div>
+                    <div class="benefit-title">ROI<br>Financier</div>
+                </div>
+                <ul class="benefit-list">
+                    <li>Revenus e-commerce : <span class="metric-highlight">+2-3M CHF/an</span></li>
+                    <li>Revenus boutiques : <span class="metric-highlight">+10-15M CHF/an</span></li>
+                    <li>Break-even : <span class="metric-highlight">12-18 mois</span></li>
+                    <li>ROI total estimé : <span class="metric-highlight">15-25M CHF/an</span></li>
+                </ul>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-header">
+                    <div class="benefit-icon">🎯</div>
+                    <div class="benefit-title">Excellence<br>Opérationnelle</div>
+                </div>
+                <ul class="benefit-list">
+                    <li>Satisfaction client VIC : <span class="metric-highlight">+25%</span></li>
+                    <li>Fidélisation long terme : <span class="metric-highlight">+30%</span></li>
+                    <li>Taux ambassadeurs : <span class="metric-highlight">+40%</span></li>
+                    <li>Qualité relation humaine : <span class="metric-highlight">Maximale</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="differentiation-section">
+            <div class="diff-title">🏆 Différenciation Concurrentielle</div>
+            <div class="diff-content">
+                TAG Heuer = <strong>1ère marque horlogère</strong> avec intelligence culturelle déployée à grande échelle<br>
+                Aucun concurrent (Cartier, Omega, Rolex) n'a cette approche aujourd'hui<br>
+                Alignement parfait philosophie <strong>"Quiet Tech"</strong> LVMH
+            </div>
+        </div>
+        
+        <div class="alignment-section">
+            <div class="alignment-title">✓ Alignement Stratégique Validé</div>
+            <div class="alignment-grid">
+                <div class="alignment-item">Philosophie "Quiet Tech" LVMH</div>
+                <div class="alignment-item">Besoins Marc (relation humaine)</div>
+                <div class="alignment-item">Besoins Benoît (data/tech)</div>
+                <div class="alignment-item">Besoins Julien (conversion online)</div>
+                <div class="alignment-item">Besoins Léa/Camille (marketing)</div>
+                <div class="alignment-item">Pionnier intelligence culturelle</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

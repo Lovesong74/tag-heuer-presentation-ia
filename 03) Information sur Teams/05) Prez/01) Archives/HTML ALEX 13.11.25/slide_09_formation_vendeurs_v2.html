@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application 2 : Formation Vendeurs</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .problem-section {
+            background: #ffebee;
+            border-left: 6px solid var(--secondary);
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .problem-title {
+            font-size: 22px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .problem-list {
+            font-size: 17px;
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .problem-list li {
+            margin-bottom: 10px;
+        }
+        
+        .solution-section {
+            background: #e8f5e9;
+            border: 4px solid var(--primary);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .solution-badge {
+            background: var(--secondary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .solution-title {
+            font-size: 28px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .solution-subtitle {
+            font-size: 19px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .workflow-section {
+            margin: 30px 0;
+        }
+        
+        .workflow-title {
+            font-size: 24px;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .workflow-step {
+            background: #f8f9fa;
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+        }
+        
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .step-title {
+            font-size: 20px;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .step-content {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .feedback-box {
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        
+        .feedback-label {
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .feedback-item {
+            font-size: 15px;
+            margin: 8px 0;
+        }
+        
+        .impact-section {
+            background: var(--accent);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .impact-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .impact-grid {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .impact-item {
+            text-align: center;
+        }
+        
+        .impact-value {
+            font-size: 36px;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .impact-label {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Application 2 : Intelligence Culturelle</div>
+            <h1>Formation Vendeurs</h1>
+        </div>
+        
+        <div class="problem-section">
+            <div class="problem-title">🚨 Le Problème</div>
+            <div class="problem-list">
+                • Vendeur Genève reçoit client chinois → <strong>Zéro contexte culturel</strong><br>
+                • Risque de maladresse, approche inadaptée aux codes culturels<br>
+                • Formation actuelle : <strong>Théorique uniquement</strong>, pas de pratique réaliste<br>
+                • Turnover constant = besoin formation <strong>rapide et efficace</strong>
+            </div>
+        </div>
+        
+        <div class="solution-section">
+            <div class="solution-badge">La Solution</div>
+            <div class="solution-title">Cultural Fluency Simulator</div>
+            <div class="solution-subtitle">
+                Un "gym conversationnel IA" pour entraîner nos vendeurs<br>
+                aux codes culturels via simulation immersive
+            </div>
+        </div>
+        
+        <div class="workflow-section">
+            <div class="workflow-title">💡 Comment ça marche ?</div>
+            
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Choix du Profil</div>
+                    </div>
+                    <div class="step-content">
+                        Vendeur sélectionne un profil client :<br>
+                        "Client chinois, 35 ans, collectionneur"<br>
+                        ou "Client américain, 28 ans, premier achat luxe"
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Simulation IA</div>
+                    </div>
+                    <div class="step-content">
+                        IA joue le rôle du client (GPT-4 fine-tuné).<br>
+                        Conversation réaliste 10-15 minutes<br>
+                        avec réactions authentiques selon profil culturel
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Pratique Argumentaire</div>
+                    </div>
+                    <div class="step-content">
+                        Vendeur adapte son discours en temps réel.<br>
+                        IA réagit selon codes culturels<br>
+                        (ex: préférence approche graduelle vs directe)
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <div class="step-title">Feedback Immédiat</div>
+                    </div>
+                    <div class="step-content">
+                        Analyse détaillée après simulation :
+                        <div class="feedback-box">
+                            <div class="feedback-label">Exemple Feedback :</div>
+                            <div class="feedback-item">✅ Excellente écoute active détectée</div>
+                            <div class="feedback-item">⚠️ Proposition trop directe, clients chinois préfèrent approche graduelle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="impact-section">
+            <div class="impact-title">📈 Impact Mesuré</div>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-value">+15%</div>
+                    <div class="impact-label">Conversion vendeurs<br>formés</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-value">-30%</div>
+                    <div class="impact-label">Temps onboarding<br>nouveaux vendeurs</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-value">+10 pts</div>
+                    <div class="impact-label">NPS clients<br>internationaux</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Architecture Simplifiée</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .architecture-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+        
+        .arch-block {
+            flex: 1;
+            background: #f8f9fa;
+            border: 4px solid var(--primary);
+            border-radius: 12px;
+            padding: 25px 20px;
+            position: relative;
+        }
+        
+        .arch-block::after {
+            content: "→";
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 32px;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .arch-block:last-child::after {
+            content: "";
+        }
+        
+        .arch-number {
+            background: var(--primary);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 auto 15px auto;
+        }
+        
+        .arch-title {
+            font-size: 22px;
+            color: var(--primary);
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .arch-list {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .arch-list li {
+            margin-bottom: 8px;
+        }
+        
+        .tech-section {
+            background: #e8f5e9;
+            border: 3px solid var(--primary);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 25px;
+        }
+        
+        .tech-title {
+            font-size: 22px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        
+        .tech-item {
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .tech-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        .tech-name {
+            font-size: 16px;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .tech-desc {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .compliance-section {
+            background: var(--secondary);
+            color: white;
+            padding: 20px 25px;
+            border-radius: 8px;
+        }
+        
+        .compliance-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        
+        .compliance-item {
+            font-size: 15px;
+            padding: 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .compliance-item::before {
+            content: "✓ ";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Infrastructure Technique</div>
+            <h1>Architecture Simplifiée</h1>
+        </div>
+        
+        <div class="architecture-flow">
+            <div class="arch-block">
+                <div class="arch-number">1</div>
+                <div class="arch-title">DATA</div>
+                <ul class="arch-list">
+                    <li>• Historiques comportements clients (boutiques + online)</li>
+                    <li>• CRM Salesforce (achats, préférences, interactions)</li>
+                    <li>• Navigation site web (clics, temps, parcours)</li>
+                    <li>• Données mutualisées LVMH (Hublot, Zenith)</li>
+                    <li>• Segmentation : Région + Génération + Parcours</li>
+                </ul>
+            </div>
+            
+            <div class="arch-block">
+                <div class="arch-number">2</div>
+                <div class="arch-title">INTELLIGENCE</div>
+                <ul class="arch-list">
+                    <li>• Algorithmes Machine Learning (GCP + Dataiku)</li>
+                    <li>• Création profils comportementaux par région</li>
+                    <li>• Patterns probabilistes (pas de stéréotypes)</li>
+                    <li>• Validation données réelles (milliers de clients)</li>
+                    <li>• Amélioration continue (feedback loop)</li>
+                </ul>
+            </div>
+            
+            <div class="arch-block">
+                <div class="arch-number">3</div>
+                <div class="arch-title">APPLICATIONS</div>
+                <ul class="arch-list">
+                    <li>• Site web adaptatif (personnalisation automatique)</li>
+                    <li>• Formation vendeurs (simulateur IA conversationnel)</li>
+                    <li>• Recommandations produits contextuelles</li>
+                    <li>• Drive-to-store intelligent</li>
+                    <li>• Analytics performance temps réel</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="tech-section">
+            <div class="tech-title">🛠️ Stack Technologique</div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">☁️</div>
+                    <div class="tech-name">Google Cloud</div>
+                    <div class="tech-desc">Infrastructure data LVMH</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🤖</div>
+                    <div class="tech-name">Dataiku</div>
+                    <div class="tech-desc">Plateforme ML mutualisée</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">💼</div>
+                    <div class="tech-name">Salesforce</div>
+                    <div class="tech-desc">CRM central + Agentforce</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🧠</div>
+                    <div class="tech-name">GPT-4</div>
+                    <div class="tech-desc">Agent conversationnel formation</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="compliance-section">
+            <div class="compliance-title">🔒 Conformité & Sécurité</div>
+            <div class="compliance-grid">
+                <div class="compliance-item">RGPD-compliant (Suisse strict)</div>
+                <div class="compliance-item">Opt-in utilisateur explicite</div>
+                <div class="compliance-item">Données anonymisées</div>
+                <div class="compliance-item">Chiffrement end-to-end</div>
+                <div class="compliance-item">Consentement granulaire</div>
+                <div class="compliance-item">Audit algorithmes (biais)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

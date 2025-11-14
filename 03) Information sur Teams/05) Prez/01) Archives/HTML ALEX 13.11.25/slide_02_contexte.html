@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contexte - La Transformation du Luxe</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            line-height: 1.3;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .introduction {
+            font-size: 19px;
+            color: #333333;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #F8F9FA;
+            border-left: 6px solid var(--secondary);
+            line-height: 1.7;
+            font-weight: 500;
+        }
+        
+        .forces-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .force-card {
+            background: white;
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+        
+        .force-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 6px 20px rgba(0,129,80,0.15);
+        }
+        
+        .force-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .force-title {
+            font-size: 22px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .force-content {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        .data-highlight {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .key-insight {
+            background: var(--accent);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            font-size: 19px;
+            font-weight: bold;
+            margin: 30px 0;
+            line-height: 1.5;
+        }
+        
+        .source {
+            font-size: 14px;
+            color: #666666;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #E0E0E0;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Contexte Stratégique</div>
+            <h1>La Transformation du Luxe</h1>
+        </div>
+        
+        <div class="introduction">
+            L'industrie du luxe traverse une inflexion stratégique majeure. Trois forces convergentes rendent l'adoption de l'Intelligence Artificielle non plus seulement souhaitable, mais essentielle à la survie et à la croissance des maisons horlogères.
+        </div>
+        
+        <div class="forces-grid">
+            <div class="force-card">
+                <div class="force-icon">📉</div>
+                <div class="force-title">"Fatigue du Luxe"</div>
+                <div class="force-content">
+                    Le secteur a perdu <span class="data-highlight">10% de sa clientèle en 2 ans</span> selon le Comité Colbert et Deloitte. Cette érosion témoigne d'une lassitude face à des expériences client qui peinent à se renouveler face aux attentes modernes.
+                </div>
+            </div>
+            
+            <div class="force-card">
+                <div class="force-icon">👥</div>
+                <div class="force-title">Nouvelles Générations</div>
+                <div class="force-content">
+                    Millennials et Gen Z représenteront <span class="data-highlight">75% des acheteurs luxe d'ici 2026</span>. Natifs du numérique, ils attendent des expériences fluides, instantanées et hyper-personnalisées au standard des géants tech.
+                </div>
+            </div>
+            
+            <div class="force-card">
+                <div class="force-icon">🌍</div>
+                <div class="force-title">Mondialisation Culturelle</div>
+                <div class="force-content">
+                    Les clients internationaux ont des codes culturels différents. Une étude BCG révèle qu'ils comparent désormais l'expérience luxe aux standards établis par des entreprises d'autres secteurs.
+                </div>
+            </div>
+        </div>
+        
+        <div class="key-insight">
+            💡 Insight clé : L'IA est perçue comme un puissant levier de "réconciliation" pour réenchanter l'expérience client et raviver la désirabilité, tout en respectant les codes du luxe authentique.
+        </div>
+        
+        <div class="source">
+            Sources : Rapport IA pour l'Expérience Client Luxe (pages 1-3), étude Comité Colbert/Deloitte 2024, BCG Luxury Consumer Study 2025
+        </div>
+    </div>
+</body>
+</html>

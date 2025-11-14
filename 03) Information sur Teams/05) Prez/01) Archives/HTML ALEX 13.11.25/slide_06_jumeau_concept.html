@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>C'est Quoi un Jumeau Numérique ?</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .definition-box {
+            background: #e8f5e9;
+            border-left: 6px solid var(--primary);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .definition-title {
+            font-size: 24px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .definition-text {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .example-section {
+            margin: 35px 0;
+        }
+        
+        .example-title {
+            font-size: 26px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .data-flow {
+            background: #f8f9fa;
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 25px 0;
+        }
+        
+        .flow-step {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        
+        .flow-icon {
+            font-size: 40px;
+            min-width: 60px;
+        }
+        
+        .flow-text {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .data-highlight {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .result-box {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .result-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .result-text {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+        
+        .important-note {
+            background: #fff3cd;
+            border: 3px solid #ffc107;
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin: 30px 0;
+        }
+        
+        .note-text {
+            font-size: 19px;
+            color: #333;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Vulgarisation Concept</div>
+            <h1>C'est Quoi un Jumeau Numérique ?</h1>
+        </div>
+        
+        <div class="definition-box">
+            <div class="definition-title">Définition Simple</div>
+            <div class="definition-text">
+                Un <strong>"profil moyen intelligent"</strong> créé en analysant des milliers de comportements réels de clients d'une même région
+            </div>
+        </div>
+        
+        <div class="example-section">
+            <div class="example-title">📊 Exemple Concret TAG Heuer</div>
+            
+            <div class="data-flow">
+                <div class="flow-step">
+                    <div class="flow-icon">🔍</div>
+                    <div class="flow-text">
+                        <strong>Étape 1 :</strong> Analyser <span class="data-highlight">10,000 clients chinois</span> sur 2 ans
+                    </div>
+                </div>
+                
+                <div class="flow-step">
+                    <div class="flow-icon">📈</div>
+                    <div class="flow-text">
+                        <strong>Étape 2 :</strong> Extraction des patterns comportementaux<br>
+                        • <span class="data-highlight">65%</span> consultent d'abord les chronographes<br>
+                        • <span class="data-highlight">45%</span> privilégient or/acier bicolore<br>
+                        • <span class="data-highlight">70%</span> achètent après 3+ visites site<br>
+                        • Panier moyen : <span class="data-highlight">4,200 CHF</span>
+                    </div>
+                </div>
+                
+                <div class="flow-step">
+                    <div class="flow-icon">🤖</div>
+                    <div class="flow-text">
+                        <strong>Étape 3 :</strong> Création d'un profil probabiliste intelligent par algorithmes ML
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="result-box">
+            <div class="result-title">🎯 Résultat</div>
+            <div class="result-text">
+                "Jumeau Virtuel Client Chinois" = Synthèse statistique comportementale qui guide les recommandations automatiques
+            </div>
+        </div>
+        
+        <div class="important-note">
+            <div class="note-text">
+                ⚠️ Important : Ce n'est PAS un individu, c'est une <strong>intelligence comportementale agrégée</strong> basée sur des milliers de données réelles
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>La Solution - Jumeau Numérique Culturel</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .solution-container {
+            padding: 60px 80px;
+            width: 100%;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .concept-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 4px solid var(--primary);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .concept-title {
+            font-size: 32px;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        
+        .concept-text {
+            font-size: 22px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .applications-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .app-card {
+            background: white;
+            border: 3px solid var(--secondary);
+            border-radius: 12px;
+            padding: 35px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(227,0,29,0.15);
+        }
+        
+        .app-number {
+            font-size: 56px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .app-title {
+            font-size: 26px;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .app-description {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .analogy-box {
+            background: var(--accent);
+            color: white;
+            padding: 25px 35px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="solution-container">
+        <div class="slide-header">
+            <h1>La Solution : Jumeau Numérique Culturel</h1>
+        </div>
+        
+        <div class="concept-box">
+            <div class="concept-title">💡 Le Concept</div>
+            <div class="concept-text">
+                Créer un <strong>"profil comportemental intelligent"</strong> par région<br>
+                pour personnaliser automatiquement l'expérience client
+            </div>
+        </div>
+        
+        <div class="applications-grid">
+            <div class="app-card">
+                <div class="app-number">1</div>
+                <div class="app-title">Site Web Adaptatif</div>
+                <div class="app-description">
+                    Personnaliser automatiquement la navigation online selon le profil culturel détecté
+                </div>
+            </div>
+            
+            <div class="app-card">
+                <div class="app-number">2</div>
+                <div class="app-title">Formation Vendeurs</div>
+                <div class="app-description">
+                    Entraîner nos équipes aux codes culturels via simulateurs IA conversationnels
+                </div>
+            </div>
+        </div>
+        
+        <div class="analogy-box">
+            🎯 Analogie : Comme un bon ami qui connaît les goûts de chaque invité avant une soirée
+        </div>
+    </div>
+</body>
+</html>

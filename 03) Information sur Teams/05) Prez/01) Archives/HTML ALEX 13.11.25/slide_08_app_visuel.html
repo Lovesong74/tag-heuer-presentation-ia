@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application 1 - Exemple Visuel</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #f5f5f5;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mockup-container {
+            padding: 50px;
+            width: 100%;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: var(--primary);
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .split-screen {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            height: 520px;
+        }
+        
+        .screen-panel {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .panel-header {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .usa-header {
+            background: linear-gradient(135deg, #003d82 0%, #0051a8 100%);
+        }
+        
+        .china-header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #c40018 100%);
+        }
+        
+        .panel-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .hero-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 3px dashed #ddd;
+        }
+        
+        .hero-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        .hero-subtitle {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .features-list {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px 20px;
+        }
+        
+        .feature-item {
+            font-size: 15px;
+            color: #333;
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .feature-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+        
+        .note-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .note-text {
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="mockup-container">
+        <div class="header">
+            <h1>Maquette Site Web Adaptatif</h1>
+            <div class="subtitle">Homepage tagheuer.com personnalisée selon profil détecté</div>
+        </div>
+        
+        <div class="split-screen">
+            <!-- Panel USA -->
+            <div class="screen-panel">
+                <div class="panel-header usa-header">
+                    🇺🇸 Client USA Détecté
+                </div>
+                <div class="panel-content">
+                    <div class="hero-box">
+                        <div class="hero-title">🏎️ Carrera Sport</div>
+                        <div class="hero-subtitle">Performance & Innovation</div>
+                    </div>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">Visuel : Automobile/Circuit racing</div>
+                        <div class="feature-item">Ton : "Unleash Performance"</div>
+                        <div class="feature-item">Mise en avant : Technologies</div>
+                        <div class="feature-item">Prix : USD + Livraison USA</div>
+                    </div>
+                    
+                    <div class="cta-button">
+                        DISCOVER OUR RACING HERITAGE →
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel Chine -->
+            <div class="screen-panel">
+                <div class="panel-header china-header">
+                    🇨🇳 Client Chine Détecté
+                </div>
+                <div class="panel-content">
+                    <div class="hero-box">
+                        <div class="hero-title">👔 Monaco Élégance</div>
+                        <div class="hero-subtitle">Raffinement & Prestige</div>
+                    </div>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">Visuel : Événement prestigieux</div>
+                        <div class="feature-item">Ton : "Excellence horlogère"</div>
+                        <div class="feature-item">Mise en avant : Héritage/Status</div>
+                        <div class="feature-item">Prix : CNY + Conciergerie Chine</div>
+                    </div>
+                    
+                    <div class="cta-button">
+                        探索卓越制表工艺 (Explorez l'excellence) →
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="note-box">
+            <div class="note-text">
+                ⚠️ Pas de stéréotypes : Patterns comportementaux validés par données réelles de milliers de clients
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Roadmap & Prochaines Étapes</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .phase {
+            background: #f8f9fa;
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px 30px;
+            position: relative;
+        }
+        
+        .phase::before {
+            content: "";
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        
+        .phase-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .phase-title {
+            font-size: 24px;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .phase-duration {
+            background: var(--secondary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .phase-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        
+        .deliverables {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .deliverables li {
+            margin-bottom: 8px;
+        }
+        
+        .phase-metrics {
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .metric-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .metric-value {
+            font-size: 22px;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .critical-success {
+            background: var(--accent);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .critical-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .critical-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .critical-item {
+            font-size: 16px;
+            padding: 12px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 6px;
+        }
+        
+        .critical-item::before {
+            content: "✓ ";
+            font-weight: bold;
+        }
+        
+        .recommendation-box {
+            background: var(--primary);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .recommendation-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .recommendation-text {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Mise en Œuvre Progressive</div>
+            <h1>Roadmap & Prochaines Étapes</h1>
+        </div>
+        
+        <div class="timeline">
+            <div class="phase">
+                <div class="phase-header">
+                    <div class="phase-title">Phase 1 : POC + Fondations Data</div>
+                    <div class="phase-duration">0-6 mois</div>
+                </div>
+                <div class="phase-content">
+                    <ul class="deliverables">
+                        <li>• Audit architecture data existante (Salesforce + GCP)</li>
+                        <li>• POC Site Web Adaptatif (1 région test : Chine)</li>
+                        <li>• POC Simulateur Formation (boutique Genève)</li>
+                        <li>• Validation RGPD/conformité groupe LVMH</li>
+                    </ul>
+                    <div class="phase-metrics">
+                        <div class="metric-label">Budget estimé</div>
+                        <div class="metric-value">150K CHF</div>
+                        <div class="metric-label" style="margin-top: 15px;">Break-even</div>
+                        <div class="metric-value">6 mois</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase">
+                <div class="phase-header">
+                    <div class="phase-title">Phase 2 : Déploiement Partiel</div>
+                    <div class="phase-duration">6-12 mois</div>
+                </div>
+                <div class="phase-content">
+                    <ul class="deliverables">
+                        <li>• Extension 5 régions (USA, Chine, Japon, Moyen-Orient, Europe)</li>
+                        <li>• Déploiement formation 10 boutiques stratégiques</li>
+                        <li>• Intégration complète Salesforce Commerce Cloud</li>
+                        <li>• Mesure ROI + ajustements algorithmes</li>
+                    </ul>
+                    <div class="phase-metrics">
+                        <div class="metric-label">Budget estimé</div>
+                        <div class="metric-value">400K CHF</div>
+                        <div class="metric-label" style="margin-top: 15px;">ROI attendu</div>
+                        <div class="metric-value">+5M CHF</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase">
+                <div class="phase-header">
+                    <div class="phase-title">Phase 3 : Scale Global</div>
+                    <div class="phase-duration">12-24 mois</div>
+                </div>
+                <div class="phase-content">
+                    <ul class="deliverables">
+                        <li>• Déploiement global toutes régions + langues</li>
+                        <li>• Formation 100% réseau boutiques (owned + wholesale)</li>
+                        <li>• Optimisation continue via feedback loop</li>
+                        <li>• Extension autres maisons LVMH (Hublot, Zenith)</li>
+                    </ul>
+                    <div class="phase-metrics">
+                        <div class="metric-label">Budget estimé</div>
+                        <div class="metric-value">800K CHF</div>
+                        <div class="metric-label" style="margin-top: 15px;">ROI attendu</div>
+                        <div class="metric-value">+15-25M CHF/an</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="critical-success">
+            <div class="critical-title">🎯 Facteurs Critiques de Succès</div>
+            <div class="critical-list">
+                <div class="critical-item">Sponsorship direction LVMH</div>
+                <div class="critical-item">Budget data infrastructure (CDP)</div>
+                <div class="critical-item">Formation change management équipes</div>
+                <div class="critical-item">Conformité RGPD stricte</div>
+                <div class="critical-item">Mesure ROI continue et transparente</div>
+                <div class="critical-item">Philosophie "Quiet Tech" respectée</div>
+            </div>
+        </div>
+        
+        <div class="recommendation-box">
+            <div class="recommendation-title">💡 Recommandation Finale</div>
+            <div class="recommendation-text">
+                Lancer Phase 1 POC (6 mois) avec investissement limité 150K CHF<br>
+                pour valider hypothèses et sécuriser buy-in direction avant scale global
+            </div>
+        </div>
+    </div>
+</body>
+</html>

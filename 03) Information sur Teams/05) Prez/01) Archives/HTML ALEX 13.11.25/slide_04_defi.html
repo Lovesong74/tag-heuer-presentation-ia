@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Défi TAG Heuer</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .introduction {
+            font-size: 19px;
+            color: #333333;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #F8F9FA;
+            border-left: 6px solid var(--secondary);
+            line-height: 1.7;
+            font-weight: 500;
+        }
+        
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .challenge-section {
+            background: white;
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .metric-item {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        
+        .metric-label {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .metric-value {
+            font-size: 32px;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .metric-context {
+            font-size: 14px;
+            color: #333;
+            margin-top: 8px;
+        }
+        
+        .pain-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .pain-list li {
+            padding: 12px 15px;
+            margin-bottom: 12px;
+            background: #fff3f3;
+            border-left: 4px solid var(--secondary);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .central-question {
+            background: var(--accent);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 35px 0;
+        }
+        
+        .question-text {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        
+        .source {
+            font-size: 14px;
+            color: #666666;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #E0E0E0;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Notre Paradoxe</div>
+            <h1>Le Défi TAG Heuer</h1>
+        </div>
+        
+        <div class="introduction">
+            TAG Heuer fait face à un paradoxe critique : comment offrir une expérience personnalisée à chaque culture mondiale tout en préservant l'authenticité de la marque et la relation humaine au cœur du luxe ?
+        </div>
+        
+        <div class="challenge-grid">
+            <div class="challenge-section">
+                <div class="section-title">📊 Nos Chiffres</div>
+                
+                <div class="metric-item">
+                    <div class="metric-label">Conversion Online</div>
+                    <div class="metric-value">2-3%</div>
+                    <div class="metric-context">vs 20-30% en boutique = 97% de visiteurs perdus</div>
+                </div>
+                
+                <div class="metric-item">
+                    <div class="metric-label">Comportement Client</div>
+                    <div class="metric-value">69%</div>
+                    <div class="metric-context">recherchent online avant visite boutique</div>
+                </div>
+                
+                <div class="metric-item">
+                    <div class="metric-label">CA Rendez-vous Genève</div>
+                    <div class="metric-value">43%</div>
+                    <div class="metric-context">des ventes boutique proviennent de RDV planifiés</div>
+                </div>
+            </div>
+            
+            <div class="challenge-section">
+                <div class="section-title">👥 Nos Équipes</div>
+                
+                <ul class="pain-list">
+                    <li><strong>Turnover constant</strong> des vendeurs nécessitant formation intensive continue</li>
+                    <li><strong>Manque de contexte</strong> : vendeurs ne savent pas ce que le client a consulté online</li>
+                    <li><strong>Clients internationaux</strong> avec attentes culturelles variées et codes différents</li>
+                    <li><strong>Storytelling incohérent</strong> dans les détaillants multimarques (wholesale 40% du business)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="central-question">
+            <div class="question-text">
+                ❓ Comment offrir une expérience personnalisée à chaque culture<br>
+                SANS perdre l'authenticité TAG Heuer ?
+            </div>
+        </div>
+        
+        <div class="source">
+            Sources : PV Réunions Marc Lucato (boutique Genève), Julien De Coupigny (E-Commerce), Benoît Grange (Data & IT) - Octobre/Novembre 2025
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application 1 - Site Web Adaptatif</title>
+    <style>
+        :root {
+            --primary: #008150;
+            --secondary: #E3001D;
+            --accent: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic', sans-serif;
+            background: #ffffff;
+            width: 1280px;
+            height: 720px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .rapport-container {
+            padding: 60px 80px;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: var(--primary);
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .context-tag {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .comparison-card {
+            border-radius: 12px;
+            padding: 30px;
+            min-height: 400px;
+        }
+        
+        .before-card {
+            background: #ffebee;
+            border: 4px solid var(--secondary);
+        }
+        
+        .after-card {
+            background: #e8f5e9;
+            border: 4px solid var(--primary);
+        }
+        
+        .card-label {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .before-label {
+            color: var(--secondary);
+        }
+        
+        .after-label {
+            color: var(--primary);
+        }
+        
+        .scenario-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .scenario-content {
+            font-size: 17px;
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .scenario-icon {
+            font-size: 36px;
+            margin: 15px 0;
+        }
+        
+        .outcome {
+            background: rgba(0,0,0,0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .outcome-label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .outcome-text {
+            font-size: 17px;
+            line-height: 1.5;
+        }
+        
+        .benefits-section {
+            margin-top: 35px;
+        }
+        
+        .benefits-title {
+            font-size: 24px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .benefits-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .benefit-value {
+            font-size: 40px;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .benefit-label {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="rapport-container">
+        <div class="slide-header">
+            <div class="context-tag">Application 1 : Personnalisation Online</div>
+            <h1>Site Web Adaptatif</h1>
+        </div>
+        
+        <div class="comparison-grid">
+            <div class="comparison-card before-card">
+                <div class="card-label before-label">❌ AVANT (Aujourd'hui)</div>
+                
+                <div class="scenario-title">Scénario : Client chinois visite tagheuer.com</div>
+                
+                <div class="scenario-content">
+                    • Homepage générique identique pour tous<br>
+                    • Scroll manuel à travers 50 montres<br>
+                    • Aucune mise en avant culturelle<br>
+                    • Informations standard non contextualisées
+                </div>
+                
+                <div class="scenario-icon">😕 → 🚪</div>
+                
+                <div class="outcome">
+                    <div class="outcome-label">Résultat :</div>
+                    <div class="outcome-text">
+                        <strong>Frustration</strong> → Client abandonne<br>
+                        <strong>Conversion : 2-3%</strong> (97% perdus)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comparison-card after-card">
+                <div class="card-label after-label">✅ APRÈS (Avec Jumeau Numérique)</div>
+                
+                <div class="scenario-title">Scénario : Même client chinois avec IA</div>
+                
+                <div class="scenario-content">
+                    • <strong>Détection automatique</strong> région/profil<br>
+                    • Homepage adapte instantanément :<br>
+                    &nbsp;&nbsp;→ Chronographes sport en avant (préférence 65%)<br>
+                    &nbsp;&nbsp;→ Visuels lifestyle résonnant codes chinois<br>
+                    &nbsp;&nbsp;→ Prix CNY + conciergerie Chine<br>
+                    • CTA boutique : "Essayez à [ville proche]"
+                </div>
+                
+                <div class="scenario-icon">😊 → 🛒</div>
+                
+                <div class="outcome">
+                    <div class="outcome-label">Résultat :</div>
+                    <div class="outcome-text">
+                        <strong>Expérience fluide</strong> → Navigation ciblée<br>
+                        <strong>Conversion : 4-6%</strong> (+100%)
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="benefits-section">
+            <div class="benefits-title">🎯 Bénéfices Mesurables</div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-value">+100%</div>
+                    <div class="benefit-label">Conversion Online</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-value">+30%</div>
+                    <div class="benefit-label">Temps sur Site</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-value">+40%</div>
+                    <div class="benefit-label">Drive-to-Store</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
